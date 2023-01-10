@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+main {
+  width: 100%;
+  position: fixed;
+  transition: 1s;
+  background-color: #fff;
+}
+main a img {
+  padding: 20px;
+  cursor: pointer;
+  width: 85%;
+}
+main li a {
+  padding: 20px;
+  font-size: 26px;
+  font-family: "Do hyeon";
+  font-weight: bold;
+}
+
+.first-banner {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  line-height: 2.5;
+  position: relative;
+  z-index: -1;
+}
+.first-banner.fadeout {
+  opacity: 0;
+  transition: 1s;
+}
+.first-banner video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.first-banner .first-box {
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -20%);
+  left: 50%;
+  top: 35%;
+}
+.first-banner .first-box span {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Do hyeon";
+  color: #e9ffe5;
+}
+.first-banner .first-box p {
+  font-size: 40px;
+  font-family: "Nanum Gothic Coding";
+  color: #e9ffe5;
+}
+.first-banner .first-box .btn {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Nanum Gothic Coding";
+  border-radius: 25px;
+  background: #e9ffe5;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.first-banner .first-box .btn:active {
+  background-color: #42855b;
+}
+.first-banner .first-box .btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-banner .first-box img {
+  width: 40px;
+}
+.first-banner .first-box .first-box-loop {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: space-between;
+  -webkit-animation: bannermove 50s linear infinite;
+          animation: bannermove 50s linear infinite;
+}
+.first-banner .first-box .first-box-loop img {
+  width: 3%;
+  margin-top: 10%;
+}
+@-webkit-keyframes bannermove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes bannermove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.second-banner {
+  width: 100%;
+  height: 100vh;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Do hyeon";
+  color: #000;
+  background-color: #d2d79f;
+}
+.second-banner.fadeout {
+  opacity: 0;
+  transition: 1s;
+}
+.second-banner .second-box {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.second-banner .second-box span {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Do hyeon";
+}
+.second-banner .second-box .circle-box {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.second-banner .second-box .circle-box p {
+  margin-top: 160px;
+  font-size: 50px;
+  font-weight: lighter;
+  font-family: "Nanum Gothic Coding";
+}
+.second-banner .second-box .circle-box .circle-left {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: gray;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.second-banner .second-box .circle-box .circle-left:active {
+  background-color: #fff;
+}
+.second-banner .second-box .circle-box .circle-right {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: gray;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.second-banner .second-box .circle-box .circle-right:active {
+  background-color: #fff;
+}
+
+.third-banner {
+  width: 100%;
+  height: 100vh;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Do hyeon";
+  color: #000;
+  background-color: #90b77d;
+}
+.third-banner.fadeout {
+  opacity: 0;
+  transition: 0.5s;
+}
+.third-banner .third-box {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.third-banner .third-box span {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Do hyeon";
+}
+.third-banner .third-box .circle-box {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.third-banner .third-box .circle-box p {
+  margin-top: 160px;
+  font-size: 50px;
+  font-family: "Nanum Gothic Coding";
+  font-weight: lighter;
+}
+.third-banner .third-box .circle-box .circle-left {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: gray;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.third-banner .third-box .circle-box .circle-left:active {
+  background-color: #fff;
+}
+.third-banner .third-box .circle-box .circle-right {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: gray;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.third-banner .third-box .circle-box .circle-right:active {
+  background-color: #fff;
+}
+
+.fourth-banner {
+  width: 100%;
+  height: 100vh;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Do hyeon";
+  color: #000;
+  background-color: #42855b;
+}
+.fourth-banner.black {
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.5s;
+}
+.fourth-banner .fourth-box {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.fourth-banner .fourth-box span {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Do hyeon";
+}
+.fourth-banner .fourth-box .circle-box {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.fourth-banner .fourth-box .circle-box p {
+  margin-top: 160px;
+  font-size: 50px;
+  font-family: "Nanum Gothic Coding";
+  font-weight: lighter;
+}
+.fourth-banner .fourth-box .circle-box .circle-left {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: gray;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.fourth-banner .fourth-box .circle-box .circle-left:active {
+  background-color: #fff;
+}
+.fourth-banner .fourth-box .circle-box .circle-right {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: gray;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.fourth-banner .fourth-box .circle-box .circle-right:active {
+  background-color: #fff;
+}
+.fourth-banner .fourth-box .popup {
+  max-width: 1200px;
+  width: 30%;
+  position: absolute;
+  background-color: #e8eaff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nanum Gothic Coding";
+  font-weight: lighter;
+  border-radius: 10%;
+  display: none;
+}
+.fourth-banner .fourth-box .popup .imgbox01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourth-banner .fourth-box .popup .imgbox01 h4 {
+  font-size: 36px;
+  font-family: "Do hyeon";
+}
+.fourth-banner .fourth-box .popup .imgbox01 img {
+  width: 30%;
+}
+.fourth-banner .fourth-box .popup .imgbox01 p {
+  font-family: "Do hyeon";
+}
+.fourth-banner .fourth-box .popup.black {
+  transition: 0.5s;
+  display: flex;
+}
+
+footer {
+  width: 100%;
+  background-color: red;
+  height: 10vh;
+  bottom: 0;
+  position: relative;
+  font-size: 30px;
+  font-family: "Do hyeon";
+  font-weight: lighter;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */

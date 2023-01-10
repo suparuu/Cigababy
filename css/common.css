@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+html,
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Pretendard", "Noto Sans SC", "Noto Sans KR", Dotum, 돋움, Helvetica, "Apple SD Gothic Neo", sans-serif, "Montserrat";
+  width: 100%;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 3.5;
+}
+
+ul img,
+li img {
+  vertical-align: middle;
+}
+
+a {
+  /* color: #fff; */
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+i,
+em,
+strong,
+b,
+code,
+::after,
+::before {
+  display: inline-block;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+header .header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+}
+header .header-container .header-left {
+  width: 10%;
+}
+header .header-container .header-left img {
+  width: 100%;
+}
+header .header-container .header-right {
+  width: 10%;
+  font-size: 20px;
+  font-family: "Do hyeon";
+}
+header .header-container .header-right img {
+  width: 50%;
+}
+header .header-container .menu {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  transition: 1s;
+  width: 300px;
+  right: -300px;
+}
+header .header-container .menu.fade {
+  transition: 1s;
+  right: 0;
+}
+header .header-container .menu ul {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 3.8;
+}
+header .header-container .menu ul a {
+  color: rgb(18, 91, 175);
+  font-family: "Do Hyeon";
+}
+
+/* footer {
+  width: 100%;
+  background-color: red;
+  height: 10vh;
+  bottom: 0;
+  position: relative;
+  font-size: 30px;
+  font-family: "Do hyeon";
+  font-weight: lighter;
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+ *//*# sourceMappingURL=common.css.map */
