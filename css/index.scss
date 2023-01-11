@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 main {
   width: 100%;
   position: fixed;
   transition: 1s;
-  background-color: #ebebeb;
+  background-color: #fff;
 
   a img {
     padding: 20px;
@@ -14,7 +21,6 @@ main {
   li a {
     padding: 20px;
     font-size: 26px;
-    font-family: "Do hyeon";
     font-weight: bold;
   }
 }
@@ -43,57 +49,57 @@ main {
     transform: translate(-50%, -20%);
     left: 50%;
     top: 35%;
+
     span {
       font-size: 100px;
       font-weight: bold;
-      font-family: "Do hyeon";
-      color: #e9ffe5;
+      color: #ebebeb;
+      letter-spacing: 20px; //글자 자간
     }
     p {
       font-size: 40px;
-      font-family: "Nanum Gothic Coding";
-      color: #e9ffe5;
+      color: #ebebeb;
     }
     .btn {
       width: 150px;
       height: 50px;
-      font-size: 20px;
+      font-size: 24px;
       font-weight: bold;
-      font-family: "Nanum Gothic Coding";
       border-radius: 25px;
-      background: #e9ffe5;
+      background: transparent;
       margin: 0 auto;
       cursor: pointer;
+      color: #ebebeb;
       &:active {
-        background-color: #42855b;
+        background-color: #161616;
+        color: #ebebeb;
       }
       a {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #ebebeb;
       }
     }
     img {
       width: 40px;
     }
-    .first-box-loop {
-      width: 100%;
-      height: 18%;
-      display: flex;
-      justify-content: space-between;
-
-      animation: bannermove 50s linear infinite;
-      img {
-        width: 3%;
-        margin-top: 10%;
+  }
+  .first-box-loop {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    animation: bannermove 50s linear infinite;
+    img {
+      width: 4%;
+    }
+    @keyframes bannermove {
+      0% {
+        transform: translate(0, 0);
       }
-      @keyframes bannermove {
-        0% {
-          transform: translate(0, 0);
-        }
-        100% {
-          transform: translate(-100%, 0);
-        }
+      100% {
+        transform: translate(-100%, 0);
       }
     }
   }
@@ -103,9 +109,8 @@ main {
   height: 100vh;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Do hyeon";
   color: #161616;
-  background-color: #d2d79f;
+  background-color: #ebebeb;
   &.fadeout {
     opacity: 0;
     transition: 1s;
@@ -122,17 +127,14 @@ main {
     span {
       font-size: 100px;
       font-weight: bold;
-      font-family: "Do hyeon";
     }
     .circle-box {
       width: 50%;
       display: flex;
       justify-content: space-between;
       p {
-        margin-top: 160px;
         font-size: 50px;
         font-weight: lighter;
-        font-family: "Nanum Gothic Coding";
       }
       .circle-left {
         width: 400px;
@@ -141,10 +143,12 @@ main {
         background-color: gray;
         border-radius: 50%;
         text-align: center;
+        display: flex;
+        justify-content: center;
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #ebebeb;
+          background-color: #fff;
         }
       }
       .circle-right {
@@ -154,10 +158,12 @@ main {
         background-color: gray;
         border-radius: 50%;
         text-align: center;
+        justify-content: center;
+        display: flex;
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #ebebeb;
+          background-color: #fff;
         }
       }
     }
@@ -168,9 +174,8 @@ main {
   height: 100vh;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Do hyeon";
-  color: #000;
-  background-color: #90b77d;
+  color: #ebebeb;
+  background-color: #161616;
   &.fadeout {
     opacity: 0;
     transition: 0.5s;
@@ -187,16 +192,13 @@ main {
     span {
       font-size: 100px;
       font-weight: bold;
-      font-family: "Do hyeon";
     }
     .circle-box {
       width: 50%;
       display: flex;
       justify-content: space-between;
       p {
-        margin-top: 160px;
         font-size: 50px;
-        font-family: "Nanum Gothic Coding";
         font-weight: lighter;
       }
       .circle-left {
@@ -205,11 +207,13 @@ main {
         margin: 0 auto;
         background-color: gray;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
         text-align: center;
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #ebebeb;
+          background-color: #fff;
         }
       }
       .circle-right {
@@ -218,11 +222,13 @@ main {
         margin: 0 auto;
         background-color: gray;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
         text-align: center;
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #ebebeb;
+          background-color: #fff;
         }
       }
     }
@@ -233,11 +239,10 @@ main {
   height: 100vh;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Do hyeon";
   color: #161616;
-  background-color: #42855b;
+  background-color: #ebebeb;
   &.black {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     transition: 0.5s;
   }
   .fourth-box {
@@ -252,16 +257,13 @@ main {
     span {
       font-size: 100px;
       font-weight: bold;
-      font-family: "Do hyeon";
     }
     .circle-box {
       width: 50%;
       display: flex;
       justify-content: space-between;
       p {
-        margin-top: 160px;
         font-size: 50px;
-        font-family: "Nanum Gothic Coding";
         font-weight: lighter;
       }
       .circle-left {
@@ -270,11 +272,13 @@ main {
         margin: 0 auto;
         background-color: gray;
         border-radius: 50%;
+        display: flex;
         text-align: center;
+        justify-content: center;
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #ebebeb;
+          background-color: #fff;
         }
       }
       .circle-right {
@@ -283,39 +287,58 @@ main {
         margin: 0 auto;
         background-color: gray;
         border-radius: 50%;
+        display: flex;
         text-align: center;
+        justify-content: center;
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #ebebeb;
+          background-color: #fff;
         }
       }
     }
     .popup {
-      max-width: 1200px;
-      width: 30%;
+      width: 600px;
+      height: 600px;
       position: absolute;
-      background-color: #e8eaff;
+      background-color: #ebebeb;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      font-family: "Nanum Gothic Coding";
-      font-weight: lighter;
-      border-radius: 10%;
+      justify-content: space-evenly;
+      font-size: 24px;
+      font-weight: 100;
+      border-radius: 15%;
+      top: 80%;
+
       display: none;
-      .imgbox01 {
+      .btns {
         display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        height: 50px;
+        button {
+          border-radius: 25px;
+          box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
+          border: none;
+          color: #000;
+          background: #ebebeb;
+          font-size: 22px;
+          a {
+            color: #000;
+          }
+        }
+      }
+
+      .imgbox01 {
+        /*  display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
+
         h4 {
           font-size: 36px;
-          font-family: "Do hyeon";
         }
         img {
           width: 30%;
-        }
-        p {
-          font-family: "Do hyeon";
         }
       }
       &.black {
@@ -323,22 +346,68 @@ main {
         display: flex;
       }
     }
+    .swiper {
+      width: 265px;
+      height: 368px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 20px;
+      font-weight: lighter;
+      color: #ebebeb;
+    }
+    .swiper-slide:nth-child(1n) {
+      background-color: rgba(0, 0, 0);
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-color: rgba(32, 32, 32);
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background-color: rgba(66, 66, 66);
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background-color: rgba(100, 99, 99);
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-color: rgba(161, 160, 160);
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-color: rgba(173, 170, 170);
+      color: #161616;
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background-color: rgba(241, 241, 241);
+      color: #161616;
+    }
   }
 }
 footer {
   width: 100%;
-  background-color: #ebebeb;
+  background-color: #161616;
   height: 10vh;
   bottom: 0;
   position: relative;
   font-size: 20px;
-  font-family: "Do hyeon";
   font-weight: lighter;
 
   .copyright {
+    color: #ebebeb;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
   }
 }
+
+@import "./index_media.scss";

@@ -1,0 +1,304 @@
+$mobile: 767px;
+$desktop: 1024px;
+
+@mixin device($max) {
+  @media (max-width: $max) {
+    @content;
+  }
+}
+
+@include device($mobile) {
+  main {
+    width: 100%;
+    position: fixed;
+    transition: 1s;
+    background-color: #fff;
+
+    a img {
+      padding: 20px;
+      cursor: pointer;
+      width: 85%;
+    } //얘는 X이미지 , 폰트
+    li a {
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+  }
+  .first-banner {
+    &.fadeout {
+      opacity: 0;
+      transition: 1s;
+    }
+
+    .first-box {
+      width: 100%;
+      position: absolute;
+      transform: translate(-50%, -20%);
+      left: 50%;
+      top: 35%;
+
+      span {
+        font-size: 50px;
+        font-weight: bold;
+        color: #ebebeb;
+        letter-spacing: 20px; //글자 자간
+      }
+      p {
+        font-size: 20px;
+        color: #ebebeb;
+      }
+      .btn {
+        width: 150px;
+        height: 50px;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 25px;
+        background: transparent;
+        margin: 0 auto;
+        cursor: pointer;
+        color: #ebebeb;
+        &:active {
+          background-color: #161616;
+          color: #ebebeb;
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ebebeb;
+        }
+      }
+      img {
+        width: 10%;
+      }
+      .first-box-loop {
+        img {
+          width: 60px;
+          height: 100px;
+        }
+        @keyframes bannermove {
+          0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(-100%, 0);
+          }
+        }
+      }
+    }
+  } //first-banner===========================================
+  .second-banner {
+    &.fadeout {
+      opacity: 0;
+      transition: 1s;
+    }
+    .second-box {
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      span {
+        font-size: 80px;
+        font-weight: bold;
+      }
+      .circle-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-size: 30px;
+          font-weight: lighter;
+        }
+        .circle-left {
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+          background-color: gray;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          cursor: pointer;
+          &:active {
+            background-color: #fff;
+          }
+        }
+        .circle-right {
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+          background-color: gray;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          cursor: pointer;
+          &:active {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .third-banner {
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ebebeb;
+    background-color: #161616;
+    &.fadeout {
+      opacity: 0;
+      transition: 0.5s;
+    }
+    .third-box {
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      span {
+        font-size: 80px;
+        font-weight: bold;
+      }
+      .circle-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-size: 30px;
+          font-weight: lighter;
+        }
+        .circle-left {
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+          background-color: gray;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          cursor: pointer;
+          &:active {
+            background-color: #fff;
+          }
+        }
+        .circle-right {
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+          background-color: gray;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          cursor: pointer;
+          &:active {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .fourth-banner {
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: #161616;
+    background-color: #ebebeb;
+    &.black {
+      background: rgba(0, 0, 0, 0.9);
+      transition: 0.5s;
+    }
+    .fourth-box {
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      text-align: center;
+      align-items: center;
+      span {
+        font-size: 80px;
+        font-weight: bold;
+      }
+      .circle-box {
+        width: 100%;
+        p {
+          font-size: 30px;
+        }
+        .circle-left {
+          width: 200px;
+          height: 200px;
+          &:active {
+            background-color: #fff;
+          }
+        }
+        .circle-right {
+          width: 200px;
+          height: 200px;
+          &:active {
+            background-color: #fff;
+          }
+        }
+      }
+      .popup {
+        width: 400px;
+        height: 400px;
+        font-size: 24px;
+        .btns {
+          display: flex;
+          width: 100%;
+          justify-content: space-evenly;
+          height: 50px;
+          button {
+            border-radius: 25px;
+            box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
+            border: none;
+            color: #000;
+            background: #ebebeb;
+            font-size: 22px;
+            a {
+              color: #000;
+            }
+          }
+        }
+
+        .imgbox01 {
+          h4 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 16px;
+          }
+          img {
+            width: 30%;
+          }
+        }
+        &.black {
+          transition: 0.5s;
+          display: flex;
+        }
+      }
+      .swiper {
+        width: 165px;
+        height: 268px;
+      }
+    }
+  }
+}

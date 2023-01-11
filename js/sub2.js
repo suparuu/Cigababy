@@ -18,10 +18,11 @@ function callback(data) {
 
   elImg01.addEventListener("click", function () {
     elMenu.classList.toggle("fade");
-  });//버거메뉴 열때
+    $(".header-right img").css("display", "none");
+  }); //버거메뉴 열때
   elBtn04.addEventListener("click", function () {
-    console.log("asd");
     elMenu.classList.remove("fade");
+    $(".header-right img").css("display", "block");
   }); //버거메뉴 눌렀을때 열고 닫기
 
 

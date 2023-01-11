@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard";
+}
 html,
 body {
   margin: 0 auto;
@@ -24,8 +34,6 @@ li {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 3.5;
 }
 ul img,
 li img {
@@ -82,32 +90,43 @@ header {
     .header-right {
       width: 10%;
       font-size: 20px;
-      font-family: "Do hyeon";
+      font-family: "Pretendard";
 
       img {
         width: 50%;
-        // z-index: 999;
+        // z-index: -999;
       }
     }
     .menu {
       position: fixed;
-      background-color: #fff;
+      background-color: #1a1a1a8f;
       top: 0;
+      right: 0;
       bottom: 0;
       transition: 1s;
       width: 300px;
-      right: -300px;
-      &.fade {
-        transition: 1s;
-        right: 0;
-      }
+      right: -360px;
+      line-height: 13.8;
+      margin-left: 30px;
+
+
       ul {
         font-size: 24px;
         font-weight: bold;
         line-height: 3.8;
+
         a {
-          color: rgb(18, 91, 175);
-          font-family: "Do Hyeon";
+          color: rgb(222, 222, 222);
+          font-family: "Pretendard";
+          font-weight: bold;
+        }
+      }
+      &.fade {
+        transition: 1s;
+        transform: translateX(-360px);
+        line-height: 13.8;
+        img {
+          width: 80%;
         }
       }
     }
@@ -138,7 +157,6 @@ header {
   font-size: 30px;
   font-family: "Do hyeon";
   font-weight: lighter;
-
   .copyright {
     display: flex;
     justify-content: center;

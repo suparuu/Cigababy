@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 main {
   width: 100%;
   position: fixed;
@@ -14,7 +20,6 @@ main a img {
 main li a {
   padding: 20px;
   font-size: 26px;
-  font-family: "Do hyeon";
   font-weight: bold;
 }
 
@@ -48,47 +53,47 @@ main li a {
 .first-banner .first-box span {
   font-size: 100px;
   font-weight: bold;
-  font-family: "Do hyeon";
-  color: #e9ffe5;
+  color: #ebebeb;
+  letter-spacing: 20px;
 }
 .first-banner .first-box p {
   font-size: 40px;
-  font-family: "Nanum Gothic Coding";
-  color: #e9ffe5;
+  color: #ebebeb;
 }
 .first-banner .first-box .btn {
   width: 150px;
   height: 50px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  font-family: "Nanum Gothic Coding";
   border-radius: 25px;
-  background: #e9ffe5;
+  background: transparent;
   margin: 0 auto;
   cursor: pointer;
+  color: #ebebeb;
 }
 .first-banner .first-box .btn:active {
-  background-color: #42855b;
+  background-color: #161616;
+  color: #ebebeb;
 }
 .first-banner .first-box .btn a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ebebeb;
 }
 .first-banner .first-box img {
   width: 40px;
 }
-.first-banner .first-box .first-box-loop {
-  width: 100%;
-  height: 18%;
+.first-banner .first-box-loop {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  bottom: 0;
   -webkit-animation: bannermove 50s linear infinite;
           animation: bannermove 50s linear infinite;
 }
-.first-banner .first-box .first-box-loop img {
-  width: 3%;
-  margin-top: 10%;
+.first-banner .first-box-loop img {
+  width: 4%;
 }
 @-webkit-keyframes bannermove {
   0% {
@@ -112,9 +117,8 @@ main li a {
   height: 100vh;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Do hyeon";
-  color: #000;
-  background-color: #d2d79f;
+  color: #161616;
+  background-color: #ebebeb;
 }
 .second-banner.fadeout {
   opacity: 0;
@@ -133,7 +137,6 @@ main li a {
 .second-banner .second-box span {
   font-size: 100px;
   font-weight: bold;
-  font-family: "Do hyeon";
 }
 .second-banner .second-box .circle-box {
   width: 50%;
@@ -141,10 +144,8 @@ main li a {
   justify-content: space-between;
 }
 .second-banner .second-box .circle-box p {
-  margin-top: 160px;
   font-size: 50px;
   font-weight: lighter;
-  font-family: "Nanum Gothic Coding";
 }
 .second-banner .second-box .circle-box .circle-left {
   width: 400px;
@@ -153,6 +154,8 @@ main li a {
   background-color: gray;
   border-radius: 50%;
   text-align: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
 }
@@ -166,6 +169,8 @@ main li a {
   background-color: gray;
   border-radius: 50%;
   text-align: center;
+  justify-content: center;
+  display: flex;
   align-items: center;
   cursor: pointer;
 }
@@ -178,9 +183,8 @@ main li a {
   height: 100vh;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Do hyeon";
-  color: #000;
-  background-color: #90b77d;
+  color: #ebebeb;
+  background-color: #161616;
 }
 .third-banner.fadeout {
   opacity: 0;
@@ -199,7 +203,6 @@ main li a {
 .third-banner .third-box span {
   font-size: 100px;
   font-weight: bold;
-  font-family: "Do hyeon";
 }
 .third-banner .third-box .circle-box {
   width: 50%;
@@ -207,9 +210,7 @@ main li a {
   justify-content: space-between;
 }
 .third-banner .third-box .circle-box p {
-  margin-top: 160px;
   font-size: 50px;
-  font-family: "Nanum Gothic Coding";
   font-weight: lighter;
 }
 .third-banner .third-box .circle-box .circle-left {
@@ -218,6 +219,8 @@ main li a {
   margin: 0 auto;
   background-color: gray;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
   text-align: center;
   align-items: center;
   cursor: pointer;
@@ -231,6 +234,8 @@ main li a {
   margin: 0 auto;
   background-color: gray;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
   text-align: center;
   align-items: center;
   cursor: pointer;
@@ -244,9 +249,8 @@ main li a {
   height: 100vh;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Do hyeon";
-  color: #000;
-  background-color: #42855b;
+  color: #161616;
+  background-color: #ebebeb;
 }
 .fourth-banner.black {
   background: rgba(0, 0, 0, 0.9);
@@ -265,7 +269,6 @@ main li a {
 .fourth-banner .fourth-box span {
   font-size: 100px;
   font-weight: bold;
-  font-family: "Do hyeon";
 }
 .fourth-banner .fourth-box .circle-box {
   width: 50%;
@@ -273,9 +276,7 @@ main li a {
   justify-content: space-between;
 }
 .fourth-banner .fourth-box .circle-box p {
-  margin-top: 160px;
   font-size: 50px;
-  font-family: "Nanum Gothic Coding";
   font-weight: lighter;
 }
 .fourth-banner .fourth-box .circle-box .circle-left {
@@ -284,7 +285,9 @@ main li a {
   margin: 0 auto;
   background-color: gray;
   border-radius: 50%;
+  display: flex;
   text-align: center;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
 }
@@ -297,7 +300,9 @@ main li a {
   margin: 0 auto;
   background-color: gray;
   border-radius: 50%;
+  display: flex;
   text-align: center;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
 }
@@ -305,51 +310,393 @@ main li a {
   background-color: #fff;
 }
 .fourth-banner .fourth-box .popup {
-  max-width: 1200px;
-  width: 30%;
+  width: 600px;
+  height: 600px;
   position: absolute;
-  background-color: #e8eaff;
+  background-color: #ebebeb;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-family: "Nanum Gothic Coding";
-  font-weight: lighter;
-  border-radius: 10%;
+  justify-content: space-evenly;
+  font-size: 24px;
+  font-weight: 100;
+  border-radius: 15%;
+  top: 80%;
   display: none;
 }
-.fourth-banner .fourth-box .popup .imgbox01 {
+.fourth-banner .fourth-box .popup .btns {
   display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 50px;
+}
+.fourth-banner .fourth-box .popup .btns button {
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #000;
+  background: #ebebeb;
+  font-size: 22px;
+}
+.fourth-banner .fourth-box .popup .btns button a {
+  color: #000;
+}
+.fourth-banner .fourth-box .popup .imgbox01 {
+  /*  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .fourth-banner .fourth-box .popup .imgbox01 h4 {
   font-size: 36px;
-  font-family: "Do hyeon";
 }
 .fourth-banner .fourth-box .popup .imgbox01 img {
   width: 30%;
-}
-.fourth-banner .fourth-box .popup .imgbox01 p {
-  font-family: "Do hyeon";
 }
 .fourth-banner .fourth-box .popup.black {
   transition: 0.5s;
   display: flex;
 }
+.fourth-banner .fourth-box .swiper {
+  width: 265px;
+  height: 368px;
+}
+.fourth-banner .fourth-box .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #ebebeb;
+}
+.fourth-banner .fourth-box .swiper-slide:nth-child(1n) {
+  background-color: rgb(0, 0, 0);
+}
+.fourth-banner .fourth-box .swiper-slide:nth-child(2n) {
+  background-color: rgb(32, 32, 32);
+}
+.fourth-banner .fourth-box .swiper-slide:nth-child(3n) {
+  background-color: rgb(66, 66, 66);
+}
+.fourth-banner .fourth-box .swiper-slide:nth-child(4n) {
+  background-color: rgb(100, 99, 99);
+}
+.fourth-banner .fourth-box .swiper-slide:nth-child(5n) {
+  background-color: rgb(161, 160, 160);
+}
+.fourth-banner .fourth-box .swiper-slide:nth-child(6n) {
+  background-color: rgb(173, 170, 170);
+  color: #161616;
+}
+.fourth-banner .fourth-box .swiper-slide:nth-child(7n) {
+  background-color: rgb(241, 241, 241);
+  color: #161616;
+}
 
 footer {
   width: 100%;
-  background-color: red;
+  background-color: #161616;
   height: 10vh;
   bottom: 0;
   position: relative;
-  font-size: 30px;
-  font-family: "Do hyeon";
+  font-size: 20px;
   font-weight: lighter;
 }
 footer .copyright {
+  color: #ebebeb;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 100%;
+    position: fixed;
+    transition: 1s;
+    background-color: #fff;
+  }
+  main a img {
+    padding: 20px;
+    cursor: pointer;
+    width: 85%;
+  }
+  main li a {
+    padding: 20px;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .first-banner.fadeout {
+    opacity: 0;
+    transition: 1s;
+  }
+  .first-banner .first-box {
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -20%);
+    left: 50%;
+    top: 35%;
+  }
+  .first-banner .first-box span {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ebebeb;
+    letter-spacing: 20px;
+  }
+  .first-banner .first-box p {
+    font-size: 20px;
+    color: #ebebeb;
+  }
+  .first-banner .first-box .btn {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 25px;
+    background: transparent;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #ebebeb;
+  }
+  .first-banner .first-box .btn:active {
+    background-color: #161616;
+    color: #ebebeb;
+  }
+  .first-banner .first-box .btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ebebeb;
+  }
+  .first-banner .first-box img {
+    width: 10%;
+  }
+  .first-banner .first-box .first-box-loop img {
+    width: 60px;
+    height: 100px;
+  }
+  @-webkit-keyframes bannermove {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  @keyframes bannermove {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  .second-banner.fadeout {
+    opacity: 0;
+    transition: 1s;
+  }
+  .second-banner .second-box {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .second-banner .second-box span {
+    font-size: 80px;
+    font-weight: bold;
+  }
+  .second-banner .second-box .circle-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .second-banner .second-box .circle-box p {
+    font-size: 30px;
+    font-weight: lighter;
+  }
+  .second-banner .second-box .circle-box .circle-left {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .second-banner .second-box .circle-box .circle-left:active {
+    background-color: #fff;
+  }
+  .second-banner .second-box .circle-box .circle-right {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .second-banner .second-box .circle-box .circle-right:active {
+    background-color: #fff;
+  }
+  .third-banner {
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ebebeb;
+    background-color: #161616;
+  }
+  .third-banner.fadeout {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .third-banner .third-box {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .third-banner .third-box span {
+    font-size: 80px;
+    font-weight: bold;
+  }
+  .third-banner .third-box .circle-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .third-banner .third-box .circle-box p {
+    font-size: 30px;
+    font-weight: lighter;
+  }
+  .third-banner .third-box .circle-box .circle-left {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .third-banner .third-box .circle-box .circle-left:active {
+    background-color: #fff;
+  }
+  .third-banner .third-box .circle-box .circle-right {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .third-banner .third-box .circle-box .circle-right:active {
+    background-color: #fff;
+  }
+  .fourth-banner {
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: #161616;
+    background-color: #ebebeb;
+  }
+  .fourth-banner.black {
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.5s;
+  }
+  .fourth-banner .fourth-box {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .fourth-banner .fourth-box span {
+    font-size: 80px;
+    font-weight: bold;
+  }
+  .fourth-banner .fourth-box .circle-box {
+    width: 100%;
+  }
+  .fourth-banner .fourth-box .circle-box p {
+    font-size: 30px;
+  }
+  .fourth-banner .fourth-box .circle-box .circle-left {
+    width: 200px;
+    height: 200px;
+  }
+  .fourth-banner .fourth-box .circle-box .circle-left:active {
+    background-color: #fff;
+  }
+  .fourth-banner .fourth-box .circle-box .circle-right {
+    width: 200px;
+    height: 200px;
+  }
+  .fourth-banner .fourth-box .circle-box .circle-right:active {
+    background-color: #fff;
+  }
+  .fourth-banner .fourth-box .popup {
+    width: 400px;
+    height: 400px;
+    font-size: 24px;
+  }
+  .fourth-banner .fourth-box .popup .btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 50px;
+  }
+  .fourth-banner .fourth-box .popup .btns button {
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #000;
+    background: #ebebeb;
+    font-size: 22px;
+  }
+  .fourth-banner .fourth-box .popup .btns button a {
+    color: #000;
+  }
+  .fourth-banner .fourth-box .popup .imgbox01 h4 {
+    font-size: 24px;
+  }
+  .fourth-banner .fourth-box .popup .imgbox01 p {
+    font-size: 16px;
+  }
+  .fourth-banner .fourth-box .popup .imgbox01 img {
+    width: 30%;
+  }
+  .fourth-banner .fourth-box .popup.black {
+    transition: 0.5s;
+    display: flex;
+  }
+  .fourth-banner .fourth-box .swiper {
+    width: 165px;
+    height: 268px;
+  }
 }/*# sourceMappingURL=index.css.map */
