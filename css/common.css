@@ -42,7 +42,6 @@ li img {
 }
 
 a {
-  /* color: #fff; */
   text-decoration: none;
 }
 
@@ -107,8 +106,12 @@ header .header-container .menu {
   line-height: 13.8;
   margin-left: 30px;
 }
+header .header-container .menu img {
+  width: 40px;
+  height: 40px;
+}
 header .header-container .menu ul {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   line-height: 3.8;
 }
@@ -116,30 +119,9 @@ header .header-container .menu ul a {
   color: rgb(222, 222, 222);
   font-family: "Pretendard";
   font-weight: bold;
+  margin-left: 30px;
 }
 header .header-container .menu.fade {
   transition: 1s;
   transform: translateX(-360px);
-  line-height: 13.8;
-}
-header .header-container .menu.fade img {
-  width: 80%;
-}
-
-/* footer {
-  width: 100%;
-  background-color: red;
-  height: 10vh;
-  bottom: 0;
-  position: relative;
-  font-size: 30px;
-  font-family: "Do hyeon";
-  font-weight: lighter;
-  .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-}
- *//*# sourceMappingURL=common.css.map */
+}/*# sourceMappingURL=common.css.map */
